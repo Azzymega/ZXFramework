@@ -1,0 +1,12 @@
+C:\Users\Danil\RiderProjects\TestParser\TestParser\bin\Debug\net7.0\QWFramework.deps.json
+C:\Users\Danil\RiderProjects\TestParser\TestParser\bin\Debug\net7.0\QWFramework.dll
+C:\Users\Danil\RiderProjects\TestParser\TestParser\bin\Debug\net7.0\QWFramework.pdb
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\TestParser.csproj.AssemblyReference.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\TestParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\TestParser.AssemblyInfoInputs.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\TestParser.AssemblyInfo.cs
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\TestParser.csproj.CoreCompileInputs.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\QWFramework.dll
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\refint\QWFramework.dll
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\QWFramework.pdb
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\net7.0\ref\QWFramework.dll
