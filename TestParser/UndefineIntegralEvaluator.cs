@@ -13,7 +13,7 @@ public class UndefineIntegralEvaluator : AEvaluator
         {
             if (Char.IsDigit(argument))
             {
-                return argument;
+                return (int)Char.GetNumericValue(argument); // Рак.
             }
         }
 
