@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ve9K+NT64WIEo8RzOaF+RmgpeLryihiyKG62OfVkJ9fJmH/rdq1hxSk+6S3ywfofZd+rgJRC2gN/QCrKn1Pfiw==",
+  "dgSpecHash": "jDhMod7xhg3RJqYo4kOYUujY3FsS16maECHGP9YORtL+tvnrK5lD4hpngq8aw3bNqtf7wrr6qUYpynEEFxUsHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Danil\\RiderProjects\\TestParser\\TestParser\\TestParser.csproj",
+  "projectFilePath": "C:\\Users\\Student\\source\\repos\\QWFramework\\TestParser\\TestParser.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

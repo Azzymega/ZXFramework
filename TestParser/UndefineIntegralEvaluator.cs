@@ -1,5 +1,5 @@
 ﻿namespace QWFramework;
-
+// QWFramework Rev 1.1
 public class UndefineIntegralEvaluator : AEvaluator
 {
     public UndefineIntegralEvaluator(string equation) : base(equation)
@@ -9,15 +9,19 @@ public class UndefineIntegralEvaluator : AEvaluator
 
     public override int FindArgument(string equation)
     {
+        string Argument = new string("");
         foreach (char argument in equation)
         {
             if (Char.IsDigit(argument))
             {
-                return (int)Char.GetNumericValue(argument); // Рак.
+                Argument += argument;        
             }
         }
-
-        return 0;
+        if (Argument == "")
+        {
+            return 0;
+        }
+        return int.Parse(Argument);
     }
 
     protected override string ReturnEquationWithoutArgument(string equation)
