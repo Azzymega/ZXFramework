@@ -1,0 +1,10 @@
+C:\Users\Danil\RiderProjects\TestParser\TestParser\bin\Debug\netcoreapp1.1\QWFramework.deps.json
+C:\Users\Danil\RiderProjects\TestParser\TestParser\bin\Debug\netcoreapp1.1\QWFramework.dll
+C:\Users\Danil\RiderProjects\TestParser\TestParser\bin\Debug\netcoreapp1.1\QWFramework.pdb
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestParser.csproj.AssemblyReference.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestParser.AssemblyInfoInputs.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestParser.AssemblyInfo.cs
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestParser.csproj.CoreCompileInputs.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\QWFramework.dll
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\QWFramework.pdb

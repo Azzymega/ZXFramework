@@ -1,7 +1,10 @@
-﻿namespace QWFramework;
-
-public struct SBufferData
+﻿using System;
+using System.Collections.Generic;
+namespace QWFramework
 {
-    public string EquationWithoutArgument;
-    public Dictionary<string, IIntegralClass> Answers;
+    public struct SBufferData
+    {
+        public string EquationWithoutArgument;
+        public Dictionary<string, IIntegralClass> Answers;
+    }
 }

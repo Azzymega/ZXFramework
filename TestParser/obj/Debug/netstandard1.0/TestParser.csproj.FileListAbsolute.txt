@@ -1,0 +1,5 @@
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netstandard1.0\TestParser.csproj.AssemblyReference.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netstandard1.0\TestParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netstandard1.0\TestParser.AssemblyInfoInputs.cache
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netstandard1.0\TestParser.AssemblyInfo.cs
+C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netstandard1.0\TestParser.csproj.CoreCompileInputs.cache

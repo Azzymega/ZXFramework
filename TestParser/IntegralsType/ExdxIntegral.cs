@@ -1,9 +1,10 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class ExdxIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class ExdxIntegral : IIntegralClass
     {
-        return "e^x+c";
+        public string ReturnAnswer(int argument)
+        {
+            return "e^x+c";
+        }
     }
 }

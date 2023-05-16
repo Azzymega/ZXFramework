@@ -1,9 +1,10 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class AxdxIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class AxdxIntegral : IIntegralClass
     {
-        return $"{argument}^x/ln({argument})+c";
+        public string ReturnAnswer(int argument)
+        {
+            return $"{argument}^x/ln({argument})+c";
+        }
     }
 }

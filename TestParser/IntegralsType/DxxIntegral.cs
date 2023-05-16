@@ -1,9 +1,10 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class DxxIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class DxxIntegral : IIntegralClass
     {
-        return "ln|x|+c";
+        public string ReturnAnswer(int argument)
+        {
+            return "ln|x|+c";
+        }
     }
 }

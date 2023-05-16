@@ -1,9 +1,10 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class SinxdxIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class SinxdxIntegral : IIntegralClass
     {
-        return "-cos(x)+c";
+        public string ReturnAnswer(int argument)
+        {
+            return "-cos(x)+c";
+        }
     }
 }

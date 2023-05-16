@@ -1,14 +1,15 @@
-﻿namespace QWFramework;
-
-public abstract class AIntegral
+﻿namespace QWFramework
 {
-    protected readonly string Equation;
-    protected int Argument;
-    protected readonly AEvaluator Evaluator;
-    protected AIntegral(string equation, AEvaluator evaluator)
+    public abstract class AIntegral
     {
-        this.Equation = equation;
-        this.Evaluator = evaluator;
+        protected readonly string Equation;
+        protected int Argument;
+        protected readonly AEvaluator Evaluator;
+        protected AIntegral(string equation, AEvaluator evaluator)
+        {
+            this.Equation = equation;
+            this.Evaluator = evaluator;
+        }
+        public abstract string ReturnAnswer();
     }
-    public abstract string ReturnAnswer();
 }

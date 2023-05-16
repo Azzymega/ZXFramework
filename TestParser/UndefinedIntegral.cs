@@ -1,13 +1,16 @@
-﻿namespace QWFramework;
-
-public class UndefinedIntegral : AIntegral
+﻿using System;
+using System.Collections.Generic;
+namespace QWFramework
 {
-    public UndefinedIntegral(String equation, AEvaluator evaluator) : base(equation, evaluator)
+    public class UndefinedIntegral : AIntegral
     {
-        this.Argument = Evaluator.FindArgument(this.Equation);
-    }
-    public override string ReturnAnswer()
-    {
-        return Evaluator.ReturnAnswer(Argument);
+        public UndefinedIntegral(String equation, AEvaluator evaluator) : base(equation, evaluator)
+        {
+            this.Argument = Evaluator.FindArgument(this.Equation);
+        }
+        public override string ReturnAnswer()
+        {
+            return Evaluator.ReturnAnswer(Argument);
+        }
     }
 }

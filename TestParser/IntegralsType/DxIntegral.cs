@@ -1,9 +1,10 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class DxIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class DxIntegral : IIntegralClass
     {
-        return "x+c";
+        public string ReturnAnswer(int argument)
+        {
+            return "x+c";
+        }
     }
 }

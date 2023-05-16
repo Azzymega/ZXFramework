@@ -1,13 +1,14 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class XadxIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class XadxIntegral : IIntegralClass
     {
-        if (argument == -1)
+        public string ReturnAnswer(int argument)
         {
-            return "Неправильный ввод. Числовой аргумент не может быть отрицательным.";
+            if (argument == -1)
+            {
+                return "Неправильный ввод. Числовой аргумент не может быть отрицательным.";
+            }
+            return $"x^{argument + 1}/{argument + 1}+c";
         }
-        return $"x^{argument + 1}/{argument + 1}+c";
     }
 }

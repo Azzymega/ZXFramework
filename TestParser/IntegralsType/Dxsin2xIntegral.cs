@@ -1,9 +1,10 @@
-﻿namespace QWFramework.IntegralsType;
-
-public class Dxsin2xIntegral : IIntegralClass
+﻿namespace QWFramework.IntegralsType
 {
-    public string ReturnAnswer(int argument)
+    public class Dxsin2xIntegral : IIntegralClass
     {
-        return "-ctg(x)+c";
+        public string ReturnAnswer(int argument)
+        {
+            return "-ctg(x)+c";
+        }
     }
 }

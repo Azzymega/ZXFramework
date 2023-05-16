@@ -1,45 +1,49 @@
-﻿namespace QWFramework;
-// QWFramework Rev 1.1
-public class UndefineIntegralEvaluator : AEvaluator
+﻿namespace QWFramework
 {
-    public UndefineIntegralEvaluator(string equation) : base(equation)
+    using System;
+    using System.Collections.Generic;
+    // QWFramework Rev 1.1
+    public class UndefineIntegralEvaluator : AEvaluator
     {
-        
-    }
-
-    public override int FindArgument(string equation)
-    {
-        string Argument = new string("");
-        foreach (char argument in equation)
+        public UndefineIntegralEvaluator(string equation) : base(equation)
         {
-            if (Char.IsDigit(argument))
+
+        }
+
+        public override int FindArgument(string equation)
+        {
+            string Argument = "";
+            foreach (char argument in equation)
             {
-                Argument += argument;        
+                if (Char.IsDigit(argument))
+                {
+                    Argument += argument;
+                }
             }
-        }
-        if (Argument == "")
-        {
-            return 0;
-        }
-        return int.Parse(Argument);
-    }
-
-    protected override string ReturnEquationWithoutArgument(string equation)
-    {
-        string equationWithoutArgument = new string("");
-        foreach (char symbols in equation)
-        {
-            if (!Char.IsDigit(symbols))
+            if (Argument == "")
             {
-                equationWithoutArgument += symbols;
+                return 0;
             }
+            return int.Parse(Argument);
         }
 
-        return equationWithoutArgument;
-    }
+        protected override string ReturnEquationWithoutArgument(string equation)
+        {
+            string equationWithoutArgument = "";
+            foreach (char symbols in equation)
+            {
+                if (!Char.IsDigit(symbols))
+                {
+                    equationWithoutArgument += symbols;
+                }
+            }
 
-    public override string ReturnAnswer(int argument)
-    {
-        return Data.Answers[Data.EquationWithoutArgument].ReturnAnswer(argument);
+            return equationWithoutArgument;
+        }
+
+        public override string ReturnAnswer(int argument)
+        {
+            return Data.Answers[Data.EquationWithoutArgument].ReturnAnswer(argument);
+        }
     }
 }

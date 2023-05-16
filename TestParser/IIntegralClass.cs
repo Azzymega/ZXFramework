@@ -1,6 +1,7 @@
-﻿namespace QWFramework;
-
-public interface IIntegralClass
+﻿namespace QWFramework
 {
-    public string ReturnAnswer(int argument);
+    public interface IIntegralClass
+    {
+        string ReturnAnswer(int argument);
+    }
 }
