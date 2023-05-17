@@ -1,5 +1,5 @@
 ﻿namespace QWFramework;
-// QWFramework Rev 1.2
+// QWFramework Rev 1.4
 public class UndefineIntegralEvaluator : AEvaluator
 {
     public UndefineIntegralEvaluator(string equation) : base(equation) { }
@@ -8,13 +8,13 @@ public class UndefineIntegralEvaluator : AEvaluator
     {
         bool minus = false;
         string Argument = new string("0");
-        foreach (char argument in equation)
+        for (int i = 0; i < equation.Length; i++)
         {
-            if (Char.IsDigit(argument))
+            if (Char.IsDigit(equation[i]) && equation[i-1] != '^')
             {
-                Argument += argument;        
+                Argument += equation[i];        
             }
-            if (argument == '-')
+            if (equation[i] == '-')
             {
                 minus = true;
             }
