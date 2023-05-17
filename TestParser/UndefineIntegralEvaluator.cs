@@ -2,10 +2,7 @@
 // QWFramework Rev 1.2
 public class UndefineIntegralEvaluator : AEvaluator
 {
-    public UndefineIntegralEvaluator(string equation) : base(equation)
-    {
-        
-    }
+    public UndefineIntegralEvaluator(string equation) : base(equation) { }
 
     public override int FindArgument(string equation)
     {
@@ -39,7 +36,6 @@ public class UndefineIntegralEvaluator : AEvaluator
                 equationWithoutArgument += symbols;
             }
         }
-
         return equationWithoutArgument;
     }
 
