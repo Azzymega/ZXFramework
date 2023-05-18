@@ -1,8 +1,7 @@
 ﻿namespace QWFramework
 {
     using System;
-    using System.Collections.Generic;
-    // QWFramework Rev 1.1
+    // QWFramework Rev 1.4
     public class UndefineIntegralEvaluator : AEvaluator
     {
         public UndefineIntegralEvaluator(string equation) : base(equation)
@@ -10,19 +9,25 @@
 
         }
 
+
         public override int FindArgument(string equation)
         {
-            string Argument = "";
-            foreach (char argument in equation)
+            bool minus = false;
+            string Argument = "0";
+            for (int i = 0; i < equation.Length; i++)
             {
-                if (Char.IsDigit(argument))
+                if (Char.IsDigit(equation[i]) && equation[i - 1] != '^')
                 {
-                    Argument += argument;
+                    Argument += equation[i];
+                }
+                if (equation[i] == '-')
+                {
+                    minus = true;
                 }
             }
-            if (Argument == "")
+            if (minus == true)
             {
-                return 0;
+                return -1 * int.Parse(Argument);
             }
             return int.Parse(Argument);
         }
@@ -32,12 +37,11 @@
             string equationWithoutArgument = "";
             foreach (char symbols in equation)
             {
-                if (!Char.IsDigit(symbols))
+                if (!Char.IsDigit(symbols) && symbols != '-')
                 {
                     equationWithoutArgument += symbols;
                 }
             }
-
             return equationWithoutArgument;
         }
 

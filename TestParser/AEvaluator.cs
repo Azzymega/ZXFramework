@@ -12,9 +12,12 @@ namespace QWFramework
 
         protected AEvaluator(string equation)
         {
-            Data.Answers = new Dictionary<string, IIntegralClass>() {{"dx",new DxIntegral()},{"x^dx",new XadxIntegral()},
-            {"dx/x",new DxxIntegral()},{"^xdx",new AxdxIntegral()},{"e^xdx",new ExdxIntegral()},
-            {"sin(x)dx",new SinxdxIntegral()},{"cos(x)dx", new CosxdxIntegral()},{"dx/sin^x",new Dxsin2xIntegral()} };
+            Data.Answers = new Dictionary<string, IIntegralClass>()
+            {{"dx",new DxIntegral()},{"x^dx",new XadxIntegral()},
+            {"dx/x",new DxxIntegral()},{"^xdx",new AxdxIntegral()},
+            {"e^xdx",new ExdxIntegral()},{"dx/sin^(x)",new Dxsin2xIntegral()},
+            {"cos(x)dx",new CosaxdxIntegral()}, {"sin(x)dx", new SinaxdxIntegral()},
+            {"dx/(^+x^)",new Dxa2x2Integral() },{ "dx/(x^^)",new Dxx2a2Integral()} };
             Data.EquationWithoutArgument = ReturnEquationWithoutArgument(equation);
         }
     }
