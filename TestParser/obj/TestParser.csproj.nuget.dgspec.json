@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danil\\RiderProjects\\TestParser\\TestParser\\TestParser.csproj": {}
+    "C:\\Users\\Student\\source\\repos\\QWFramework\\TestParser\\TestParser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danil\\RiderProjects\\TestParser\\TestParser\\TestParser.csproj": {
+    "C:\\Users\\Student\\source\\repos\\QWFramework\\TestParser\\TestParser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danil\\RiderProjects\\TestParser\\TestParser\\TestParser.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\source\\repos\\QWFramework\\TestParser\\TestParser.csproj",
         "projectName": "QWFramework",
-        "projectPath": "C:\\Users\\Danil\\RiderProjects\\TestParser\\TestParser\\TestParser.csproj",
-        "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danil\\RiderProjects\\TestParser\\TestParser\\obj\\",
+        "projectPath": "C:\\Users\\Student\\source\\repos\\QWFramework\\TestParser\\TestParser.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\source\\repos\\QWFramework\\TestParser\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

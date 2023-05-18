@@ -8,3 +8,13 @@ C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestP
 C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\TestParser.csproj.CoreCompileInputs.cache
 C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\QWFramework.dll
 C:\Users\Danil\RiderProjects\TestParser\TestParser\obj\Debug\netcoreapp1.1\QWFramework.pdb
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\TestParser.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\TestParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\TestParser.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\TestParser.AssemblyInfo.cs
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\TestParser.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\QWFramework.dll
+C:\Users\Student\source\repos\QWFramework\TestParser\obj\Debug\netcoreapp1.1\QWFramework.pdb
+C:\Users\Student\source\repos\QWFramework\TestParser\bin\Debug\netcoreapp1.1\QWFramework.deps.json
+C:\Users\Student\source\repos\QWFramework\TestParser\bin\Debug\netcoreapp1.1\QWFramework.dll
+C:\Users\Student\source\repos\QWFramework\TestParser\bin\Debug\netcoreapp1.1\QWFramework.pdb
