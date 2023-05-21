@@ -8,7 +8,7 @@ namespace QWFramework.IntegralsType
 {
     public class CosaxdxIntegral : IIntegralClass
     {
-        public string ReturnAnswer(int argument)
+        public string ReturnAnswer(int argument, string addon)
         {
             return $"1/{argument}*sin({argument}x)+c";
         }

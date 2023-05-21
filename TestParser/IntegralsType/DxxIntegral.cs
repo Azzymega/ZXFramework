@@ -2,8 +2,8 @@
 
 public class DxxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument)
+    public string ReturnAnswer(int argument, string addon)
     {
-        return "ln|x|+c";
+        return addon+"ln|x|+c";
     }
 }

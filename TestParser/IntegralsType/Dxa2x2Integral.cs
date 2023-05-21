@@ -8,9 +8,9 @@ namespace QWFramework.IntegralsType
 {
     public class Dxa2x2Integral : IIntegralClass
     {
-        public string ReturnAnswer(int argument)
+        public string ReturnAnswer(int argument, string addon)
         {
-            return $"1/{argument}*artcg(x/{argument})+c";
+            return addon+$"1/{argument}*artcg(x/{argument})+c";
         }
     }
 }

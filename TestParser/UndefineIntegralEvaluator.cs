@@ -1,60 +1,88 @@
 ﻿namespace QWFramework;
-// QWFramework Rev 1.7
+// QWFramework RC
 public class UndefineIntegralEvaluator : AEvaluator
 {
-    public UndefineIntegralEvaluator(string equation) : base(equation) { }
+    private string _addon;
+    public UndefineIntegralEvaluator(string equation) : base(equation) {_addon = "";}
 
     public override int FindArgument(string equation)
     {
-        int count = 0;
-        foreach (char c in equation)
+        List<String> blocks = new List<string>();
+        string block = "";
+        foreach (var ch in equation)
         {
-            if (Char.IsDigit(c))
+            if (ch == '*')
+            {
+                blocks.Add(block);
+                block = "";
+            }
+            else
+            {
+                block += ch;
+            }
+        }
+        blocks.Add(block);
+        for (int i = 0; i < blocks.Count; i++)
+        {
+            foreach (var str in blocks[i])
+            {
+                if (str == 'd')
+                {
+                    _addon += blocks[i - 1];
+                    _addon += '*';
+                    break;
+                }
+            }
+        }
+        int count = 0;
+        for (int i = 0; i < equation.Length; i++)
+        {
+            if (Char.IsDigit(equation[i]) && equation[i+1] != '*' && Char.IsDigit(equation[i+1]))
             {
                 count++;
             }
         }
         if (count > 1)
         {
-        bool minus = false;
-        string Argument = new string("0");
-        for (int i = 0; i < equation.Length; i++)
-        {
-            if (Char.IsDigit(equation[i]) && equation[i-1] != '^')
-            {
-                Argument += equation[i];        
-            }
-            if (equation[i] == '-')
-            {
-                minus = true;
-            }
-        }
-        if (minus == true)
-        {
-            return -1*int.Parse(Argument);
-        }
-        return int.Parse(Argument);
-        }
-        else
-        {
             bool minus = false;
-            string Argument = new string("0");
+            string argument = "";
             for (int i = 0; i < equation.Length; i++)
             {
-                if (Char.IsDigit(equation[i]))
+                if (Char.IsDigit(equation[i]) && equation[i-1] != '^')
                 {
-                    Argument += equation[i];
+                    argument += equation[i];        
                 }
                 if (equation[i] == '-')
                 {
                     minus = true;
                 }
             }
-            if (minus == true)
+            if (minus)
             {
-                return -1 * int.Parse(Argument);
+                return -1*int.Parse(argument);
             }
-            return int.Parse(Argument);
+            return int.Parse(argument);
+        }
+        else
+        {
+            bool minus = false;
+            string argument = "";
+            for (int i = 0; i < equation.Length; i++)
+            {
+                if (Char.IsDigit(equation[i]) && i != 0)
+                {
+                    argument += equation[i];
+                }
+                if (equation[i] == '-')
+                {
+                    minus = true;
+                }
+            }
+            if (minus)
+            {
+                return -1 * int.Parse(argument);
+            }
+            return int.Parse(argument);
         }
     }
 
@@ -63,7 +91,7 @@ public class UndefineIntegralEvaluator : AEvaluator
         string equationWithoutArgument = new string("");
         foreach (char symbols in equation)
         {
-            if (!Char.IsDigit(symbols) && symbols != '-')
+            if (!Char.IsDigit(symbols) && symbols != '-' && symbols != '*')
             {
                 equationWithoutArgument += symbols;
             }
@@ -73,6 +101,6 @@ public class UndefineIntegralEvaluator : AEvaluator
 
     public override string ReturnAnswer(int argument)
     {
-        return Data.Answers[Data.EquationWithoutArgument].ReturnAnswer(argument);
+        return Data.Answers[Data.EquationWithoutArgument].ReturnAnswer(argument, _addon);
     }
 }

@@ -2,5 +2,5 @@
 
 public interface IIntegralClass
 {
-    public string ReturnAnswer(int argument);
+    public string ReturnAnswer(int argument, string addon);
 }

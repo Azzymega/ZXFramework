@@ -2,8 +2,8 @@
 
 public class CosxdxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument)
+    public string ReturnAnswer(int argument, string addon)
     {
-        return "sin(x)+c";
+        return addon+"sin(x)+c";
     }
 }

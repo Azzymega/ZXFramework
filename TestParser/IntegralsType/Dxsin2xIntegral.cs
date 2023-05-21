@@ -2,8 +2,8 @@
 
 public class Dxsin2xIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument)
+    public string ReturnAnswer(int argument, string addon)
     {
-        return "-ctg(x)+c";
+        return addon+"-ctg(x)+c";
     }
 }

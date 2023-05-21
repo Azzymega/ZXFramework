@@ -2,7 +2,7 @@
 
 public class DxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument)
+    public string ReturnAnswer(int argument, string addon)
     {
         return "x+c";
     }

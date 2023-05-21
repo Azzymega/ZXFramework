@@ -2,8 +2,8 @@
 
 public class ExdxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument)
+    public string ReturnAnswer(int argument, string addon)
     {
-        return "e^x+c";
+        return addon+"e^x+c";
     }
 }
