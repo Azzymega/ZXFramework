@@ -2,7 +2,7 @@
 
 public class SinxdxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument, string addon)
+    public string ReturnAnswer(List<int> argument, string addon)
     {
         return addon+"-cos(x)+c";
     }

@@ -8,9 +8,9 @@ namespace QWFramework.IntegralsType
 {
     public class SinaxdxIntegral : IIntegralClass
     {
-        public string ReturnAnswer(int argument, string addon)
+        public string ReturnAnswer(List<int> argument, string addon)
         {
-            return addon+$"-1/{argument}*cos({argument}x)+c";
+            return addon + $"-1/{argument[0]}*cos({argument[0]}x)+c";
         }
     }
 }

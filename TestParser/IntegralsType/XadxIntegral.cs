@@ -2,12 +2,12 @@
 
 public class XadxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument, string addon)
+    public string ReturnAnswer(List<int> argument, string addon)
     {
-        if (argument == -1)
+        if (argument[0] == -1)
         {
             return "Неправильный ввод. Числовой аргумент не может обращать знаменатель в ноль.";
         }
-        return addon+$"x^{argument + 1}/{argument + 1}+c";
+        return addon + $"x^{argument[0] + 1}/{argument[0] + 1}+c";
     }
 }

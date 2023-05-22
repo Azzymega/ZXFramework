@@ -2,8 +2,8 @@
 
 public class AxdxIntegral : IIntegralClass
 {
-    public string ReturnAnswer(int argument, string addon)
+    public string ReturnAnswer(List<int> argument, string addon)
     {
-        return $"{argument}^x/ln({argument})+c";
+        return addon+$"{argument[0]}^x/ln({argument[0]})+c";
     }
 }
