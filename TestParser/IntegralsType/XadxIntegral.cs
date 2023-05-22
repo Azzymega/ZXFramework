@@ -8,6 +8,6 @@ public class XadxIntegral : IIntegralClass
         {
             return "Неправильный ввод. Числовой аргумент не может обращать знаменатель в ноль.";
         }
-        return addon + $"x^{argument[0] + 1}/{argument[0] + 1}+c";
+        return addon + $"(x^{argument[0] + 1})/{argument[0] + 1}+c";
     }
 }
