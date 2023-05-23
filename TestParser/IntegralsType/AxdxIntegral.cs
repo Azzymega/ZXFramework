@@ -17,6 +17,6 @@ public class AxdxIntegral : IIntegralClass
             return $"({arguments[0]}*({argument[0]}^x)/{arguments[1]}ln({argument[0]}))+c";
         }
         addon = addon.Trim('*');
-        return $"{addon}*{argument[0]}^x/ln({argument[0]})+c";
+        return $"{addon}({argument[0]}^x)/ln({argument[0]})+c";
     }
 }
