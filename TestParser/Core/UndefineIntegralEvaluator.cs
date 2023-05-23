@@ -1,13 +1,13 @@
-﻿namespace QWFramework;
-// QWFramework RC Update 4
+﻿namespace QWFramework.Core;
+// QWFramework RC Update 5
 public class UndefineIntegralEvaluator : AEvaluator
 {
     private string _addon;
-    public UndefineIntegralEvaluator(string equation) : base(equation) {_addon = "";}
+    public UndefineIntegralEvaluator(string equation) : base(equation) { _addon = ""; }
 
     public override List<int> FindArgument(string equation)
     {
-        List<String> blocks = new List<string>();
+        List<string> blocks = new List<string>();
         string block = "";
         foreach (char letter in equation)
         {
@@ -20,7 +20,7 @@ public class UndefineIntegralEvaluator : AEvaluator
         }
         string currentEquation = "";
         blocks.Add(block);
-        for (int  i = 0; i < blocks.Count;i++)
+        for (int i = 0; i < blocks.Count; i++)
         {
             foreach (char letter in blocks[i])
             {
@@ -41,12 +41,12 @@ public class UndefineIntegralEvaluator : AEvaluator
         string num = "";
         foreach (char letter in currentEquation)
         {
-            if (Char.IsDigit(letter))
+            if (char.IsDigit(letter))
             {
                 num += letter;
                 //ints.Add(int.Parse(letter.ToString()));
             }
-            else if (!Char.IsDigit(letter) && num != "")
+            else if (!char.IsDigit(letter) && num != "")
             {
                 ints.Add(int.Parse(num));
                 num = "";
@@ -60,7 +60,7 @@ public class UndefineIntegralEvaluator : AEvaluator
         string equationWithoutArgument = new string("");
         foreach (char symbols in equation)
         {
-            if (!Char.IsDigit(symbols) && symbols != '-' && symbols != '*' && symbols != '/')
+            if (!char.IsDigit(symbols) && symbols != '-' && symbols != '*' && symbols != '/')
             {
                 equationWithoutArgument += symbols;
             }

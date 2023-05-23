@@ -1,4 +1,6 @@
-﻿namespace QWFramework.IntegralsType;
+﻿using QWFramework.Core;
+
+namespace QWFramework.IntegralsType;
 
 public class DxIntegral : IIntegralClass
 {

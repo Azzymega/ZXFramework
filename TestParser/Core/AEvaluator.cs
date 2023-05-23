@@ -1,6 +1,6 @@
 ﻿using QWFramework.IntegralsType;
 
-namespace QWFramework;
+namespace QWFramework.Core;
 
 public abstract class AEvaluator
 {
@@ -11,7 +11,7 @@ public abstract class AEvaluator
 
     protected AEvaluator(string equation)
     {
-        Data.Answers = new Dictionary<string, IIntegralClass>() 
+        Data.Answers = new Dictionary<string, IIntegralClass>()
         {{"dx",new DxIntegral()},{"x^dx",new XadxIntegral()},
         {"dxx",new DxxIntegral()},{"^xdx",new AxdxIntegral()},
         {"e^xdx",new ExdxIntegral()},{"dxsin^(x)",new Dxsin2xIntegral()},

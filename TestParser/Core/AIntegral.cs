@@ -1,4 +1,4 @@
-﻿namespace QWFramework;
+﻿namespace QWFramework.Core;
 
 public abstract class AIntegral
 {
@@ -7,8 +7,8 @@ public abstract class AIntegral
     protected readonly AEvaluator Evaluator;
     protected AIntegral(string equation, AEvaluator evaluator)
     {
-        this.Equation = equation;
-        this.Evaluator = evaluator;
+        Equation = equation;
+        Evaluator = evaluator;
     }
     public abstract string ReturnAnswer();
 }
