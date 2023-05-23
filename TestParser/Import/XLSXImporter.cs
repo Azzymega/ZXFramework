@@ -9,12 +9,19 @@ namespace QWFramework.Import
 {
     public class XLSXImporter : IImporter
     {
-        private string? output;
+        private string output = "";
         public void Import(string path)
         {
             XLWorkbook book = new XLWorkbook(path);
             IXLWorksheet sheet = book.Worksheet(1);
-            output = sheet.Cell("A1").GetValue<string>();
+            if (sheet.Cell("A1").GetValue<string>() == "")
+            {
+                output = "Ячейка A1 пуста";
+            }
+            else
+            {
+                output = sheet.Cell("A1").GetValue<string>();
+            }
         }
         public string ReturnOutput()
         {
