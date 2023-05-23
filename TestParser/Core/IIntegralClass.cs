@@ -1,4 +1,4 @@
-﻿namespace QWFramework;
+﻿namespace QWFramework.Core;
 
 public interface IIntegralClass
 {

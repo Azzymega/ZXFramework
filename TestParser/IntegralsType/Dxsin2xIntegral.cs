@@ -1,4 +1,6 @@
-﻿namespace QWFramework.IntegralsType;
+﻿using QWFramework.Core;
+
+namespace QWFramework.IntegralsType;
 
 public class Dxsin2xIntegral : IIntegralClass
 {
