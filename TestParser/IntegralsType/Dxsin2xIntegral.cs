@@ -1,10 +1,13 @@
-﻿namespace QWFramework.IntegralsType
+﻿using QWFramework.Core;
+
+using System.Collections.Generic;
+namespace QWFramework.IntegralsType
 {
     public class Dxsin2xIntegral : IIntegralClass
     {
-        public string ReturnAnswer(int argument)
+        public string ReturnAnswer(List<int> argument, string addon)
         {
-            return "-ctg(x)+c";
+            return addon + "-ctg(x)+c";
         }
     }
 }

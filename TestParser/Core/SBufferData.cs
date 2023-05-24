@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-namespace QWFramework
+﻿using System.Collections.Generic;
+
+namespace QWFramework.Core
 {
     public struct SBufferData
     {

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp1.1</TargetFramework>
@@ -6,5 +6,9 @@
         <AssemblyName>QWFramework</AssemblyName>
         <RootNamespace>QWFramework</RootNamespace>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DocumentFormat.OpenXml" Version="2.8.0" />
+    </ItemGroup>
 
 </Project>

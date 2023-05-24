@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QWFramework.Core;
 
 namespace QWFramework.IntegralsType
 {
-    public class CosaxdxIntegral : IIntegralClass
+    class CosaxdxIntegral : IIntegralClass
     {
-        public string ReturnAnswer(int argument)
+        public string ReturnAnswer(List<int> argument, string addon)
         {
-            return $"1/{argument}*sin({argument}x)+c";
+            return addon+$"1/{argument[0]}*sin({argument[0]}x)+c";
         }
     }
 }

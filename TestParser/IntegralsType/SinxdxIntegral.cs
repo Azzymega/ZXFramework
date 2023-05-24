@@ -1,10 +1,13 @@
-﻿namespace QWFramework.IntegralsType
+﻿using QWFramework.Core;
+using System.Collections.Generic;
+
+namespace QWFramework.IntegralsType
 {
     public class SinxdxIntegral : IIntegralClass
     {
-        public string ReturnAnswer(int argument)
+        public string ReturnAnswer(List<int> argument, string addon)
         {
-            return "-cos(x)+c";
+            return addon + "-cos(x)+c";
         }
     }
 }
